@@ -40,11 +40,14 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 		'-lang.json',
 	);
 }
+
+// root module
 @NgModule({
 	declarations: [AppComponent, FooterComponent],
 	imports: [
 		BrowserModule,
 		FormsModule,
+		CoreModule,
 		CoreModule,
 		SharedModule,
 		HttpClientModule,
